@@ -31,4 +31,5 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 
 EXPOSE 65432 65433
 
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh","/usr/local/bin/digdag","server","--config","/etc/digdag/server.properties"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh","/usr/local/bin/digdag","server","--config","/etc/digdag/server.properties", "--bind", "0.0.0.0"]
+
